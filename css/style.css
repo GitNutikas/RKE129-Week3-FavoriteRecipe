@@ -34,6 +34,23 @@ body {
 img {
     width:200px;
     border: 2px solid grey;
+    opacity: 50%;
+    animation-play-state: paused;
+  }
+
+img:hover {  
+    animation-play-state: running;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    opacity: 70%;
+  }
+
+@keyframes hover{
+    25% {opacity: 70%;}
+    50% {opacity: 100%;}
 }
 
 ul li{
